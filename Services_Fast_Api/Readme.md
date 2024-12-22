@@ -45,7 +45,7 @@
 - **Создание задачи**:
 
   ```bash
-  curl -X POST http://localhost:80/items -H "Content-Type: application/json" -d '{"title":"Buy milk","description":"Skim milk","completed":false}'
+  curl -X POST http://localhost:80/items -H "Content-Type: application/json" -d '{"title":"some action","description":"some production","completed":false}'
   ```
 
 - **Получение всех задач**:
@@ -57,13 +57,13 @@
 - **Обновление задачи**:
 
   ```bash
-  curl -X PUT http://localhost:80/items/1 -H "Content-Type: application/json" -d '{"title":"Buy bread","description":"Whole grain","completed":true}'
+  curl -X PUT http://localhost:80/items/1 -H "Content-Type: application/json" -d '{"title":"some action","description":"some production","completed":true}'
   ```
 
 - **Удаление задачи**:
 
   ```bash
-  curl -X DELETE http://localhost:80/items/1
+  curl -X DELETE http://localhost:80/items/id
   ```
 
 ### Short URL
